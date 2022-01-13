@@ -1,14 +1,17 @@
-﻿6::
+6::
 while true
 {
     MouseMove, 0, -(A_ScreenHeight*1.5), 1, R
-    Sleep, 100
+    Random, Rand, 50, 200
+    Sleep %Rand%
     MouseMove, 0 , (A_ScreenHeight/7), 1, R
-    Sleep, 500
+    Random, Rand, 300, 700
+    Sleep %Rand%
     MouseMove, 0, -(A_ScreenHeight/1.3), 5, R
     Click
     Send, s
-    Sleep 3000
+    Random, Rand, 1500, 5000
+    Sleep %Rand%
     continue
 }
 return
